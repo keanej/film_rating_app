@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://kit.fontawesome.com/0e24476d4b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+  
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Film Ratings</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="form-group">
+      <select id="product-select" class="form-control custom-select">
+        <option value="0" disabled selected>Select Film</option>
+        <option value="shaw">The Shawshank Redemption</option>
+        <option value="fight">Fight Club</option>
+        <option value="fellas">Goodfellas</option>
+        <option value="raiders">Raiders of the Lost Ark</option>
+        <option value="gladiator">Gladiator</option>
+        <option value="pulp">Pulp Fiction</option>
+        <option value="green">The Green Mile</option>
+        <option value="casablanca">Casablanca</option>
+        <option value="rear">Rear Window</option>
+        <option value="brave">Braveheart</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <input type="number" id="rating-control" class="form-control" step="0.1" max="5" placeholder="Rate 1 - 5" disabled>
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Film Title</th>
+          <th>Rating</th>
+          <th>Year</th>
+          <th>Length</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="shaw">
+          <td>The Shawshank Redemption</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+          <td>1994</td>
+          <td>2h 22m</td>
+        </tr>
+
+        <tr class="fight">
+          <td>Fight Club</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+          <td>1999</td>
+          <td>2h 19m</td>
+        </tr>
+
+        <tr class="fellas">
+          <td>Goodfellas</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+          <td>1990</td>
+          <td>2h 26m</td>
+        </tr>
+
+        <tr class="raiders">
+          <td>Raiders of the Lost Ark</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+          <td>1981</td>
+          <td>1h 55m</td>
+        </tr>
+
+        <tr class="gladiator">
+          <td>Gladiator</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+          <td>2000</td>
+          <td>2h 35m</td>
+        </tr>
+        
+        <tr class="pulp">
+          <td>Pulp Fiction</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+          <td>1994</td>
+          <td>2h 34m</td>
+        </tr>
+
+        <tr class="green">
+          <td>The Green Mile</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+          <td>1999</td>
+          <td>3h 9m</td>
+        </tr>
+
+        <tr class="casablanca">
+          <td>Casablanca</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+          <td>1942</td>
+          <td>1h 42m</td>
+        </tr>
+
+        <tr class="rear">
+          <td>Rear Window</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+          <td>1954</td>
+          <td>1h 52m</td>
+        </tr>
+
+        <tr class="brave">
+          <td>Braveheart</td>
+          <td>
+            <div class="stars-outer">
+              <div class="stars-inner"></div>
+            </div>
+            <span class="number-rating"></span>
+          </td>
+          <td>1995</td>
+          <td>2h 58m</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/main.js"></script>
+  
+</body>
+</html>
