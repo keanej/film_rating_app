@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
-  background-image: url('/img/raiders.jpg');
+  background-image: url('../img/raiders.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
